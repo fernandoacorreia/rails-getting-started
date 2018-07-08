@@ -1,4 +1,4 @@
-FROM fernandoacorreia/rails-docker
+FROM fernandoacorreia/rails-docker:5.2.0
 
 RUN \
   apt-get update && \

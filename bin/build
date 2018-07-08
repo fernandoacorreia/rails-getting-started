@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Builds a Docker image for doing development work on this project.
+#
+set -o nounset -o errexit -o pipefail
+
+declare -r script_dir=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
+declare -r dockerfile_dir=$(cd "$script_dir/../dockerfile" && pwd)
+declare -r image_name=rails-getting-started
+
+docker build -t $image_name $dockerfile_dir
