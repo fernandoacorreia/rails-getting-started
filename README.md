@@ -15,3 +15,10 @@ Build Docker image:
 ```
 build-image
 ```
+
+Execute the `rails` command in the current directory:
+
+```
+cd src
+rails -v
+```
