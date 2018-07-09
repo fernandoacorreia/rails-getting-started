@@ -1,5 +1,7 @@
 FROM fernandoacorreia/rails-docker:5.2.0
 
-RUN \
-  apt-get update && \
-  apt-get install -y sqlite3
+# Update package cache
+RUN apt-get update
+
+# Install sqlite3
+RUN apt-get install -y sqlite3
